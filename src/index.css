@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .globe-container {
+      perspective: 1000px;
+    }
+  
+    .globe-image {
+      animation: spin-y 20s linear infinite;
+      transform-style: preserve-3d;
+    }
+  
+    @keyframes spin-y {
+      from {
+        transform: rotateY(0deg);
+      }
+      to {
+        transform: rotateY(360deg);
+      }
+    }
+  }
+  
