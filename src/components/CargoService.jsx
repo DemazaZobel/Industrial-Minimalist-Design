@@ -59,37 +59,40 @@ const processSteps = [
 
 const CargoService = () => {
   return (
-    <section className="max-w-full mx-auto px-6 md:px-12 py-20 bg-background  space-y-16 mt-40 ml-20 mr-20">
+    <section className="max-w-full mx-auto px-4 sm:px-6 md:px-12 py-20 bg-background space-y-20 mt-20 md:mt-40 ml-12 mr-12">
       
       {/* Services Overview */}
       <div>
-        <h2 className="text-3xl md:text-4xl font-bold text-primaryText mb-8 text-center">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primaryText mb-8 text-center px-2">
           Our Import & Export Services
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10">
           {services.map(({ icon, title, description }, idx) => (
-            <div key={idx} className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition">
+            <div 
+              key={idx} 
+              className="flex flex-col items-center text-center p-6 sm:p-8 bg-white rounded-lg shadow-md hover:shadow-xl transition max-w-md mx-auto"
+            >
               {icon}
-              <h3 className="text-xl font-semibold mb-3 text-primary">{title}</h3>
-              <p className="text-text max-w-xs">{description}</p>
+              <h3 className="text-lg sm:text-xl font-semibold mb-3 text-primary">{title}</h3>
+              <p className="text-text max-w-xs sm:max-w-sm">{description}</p>
             </div>
           ))}
         </div>
       </div>
 
       {/* How It Works */}
-      <div className='mb-20'>
-        <h2 className="text-3xl md:text-4xl font-bold text-primaryText mt-40 mb-8 text-center">
+      <div className=''>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primaryText mb-8 text-center px-2 ">
           How It Works
         </h2>
-        <ol className="space-y-12 md:space-y-0 md:grid md:grid-cols-5 md:gap-8">
+        <ol className="space-y-12 md:space-y-0 md:grid md:grid-cols-5 md:gap-8 px-2 sm:px-6 max-w-6xl mx-auto">
           {processSteps.map(({ step, title, description }) => (
-            <li key={step} className="flex flex-col items-center text-center">
-              <div className="flex items-center justify-center w-14 h-14 rounded-full bg-primary text-white font-bold text-lg mb-4">
+            <li key={step} className="flex flex-col items-center text-center max-w-xs mx-auto">
+              <div className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-primary text-white font-bold text-base sm:text-lg mb-4">
                 {step}
               </div>
-              <h3 className="text-lg font-semibold mb-2 text-primary">{title}</h3>
-              <p className="text-text max-w-xs">{description}</p>
+              <h3 className="text-base sm:text-lg font-semibold mb-2 text-primary">{title}</h3>
+              <p className="text-text max-w-xs sm:max-w-sm">{description}</p>
             </li>
           ))}
         </ol>

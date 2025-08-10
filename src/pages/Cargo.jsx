@@ -7,7 +7,7 @@ import ShippingMap from '../components/ShippingMap.jsx';
 
 const Cargo = () => (
   <div className="mt-[-74px] bg-background">
-    <title>About Us | Dankil</title>
+    <title>About Us | DANKAL</title>
     <meta name="description" content="Learn more about Dankil, our mission, vision, and leadership." />
    
     <Globe />

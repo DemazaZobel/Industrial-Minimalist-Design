@@ -9,7 +9,7 @@ import ManufacturignHowitworks from "../components/ManufacturingHowitworks.jsx";
 export default function Manufacture() {
   return (
     <div className="bg-background">
-      <title>Manufacture | Dankil</title>
+      <title>Manufacture | DANKAL</title>
       <meta name="description" content="Learn about Dankil's manufacturing processes and solutions." />
    
       <ManufacturingOverview />

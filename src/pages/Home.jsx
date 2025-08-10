@@ -11,7 +11,7 @@ import GalleryPage from '../components/Gallary';
 
 const Home = () => (
   <div className="bg-background">
-    <title>Dankil | Home</title>
+    <title>DANKAL | Home</title>
     <meta name="description" content="Dankil Industrial, Construction, Manufacturing, and Import-Export Services" />
     <HeroHome />
     <About />

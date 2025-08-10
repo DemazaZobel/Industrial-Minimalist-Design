@@ -114,21 +114,24 @@ const Projects = () => {
         </motion.div>
 
         {/* Filters */}
-        <div className="flex justify-center flex-wrap gap-3 mb-14">
-          {industries.map((industry) => (
-            <button
-              key={industry}
-              onClick={() => setSelectedIndustry(industry)}
-              className={`px-5 py-2 rounded-full text-sm border font-medium ${
+        <div className="flex justify-center flex-wrap gap-3 mb-14 px-4 sm:px-0 max-w-4xl mx-auto">
+        {industries.map((industry) => (
+          <button
+            key={industry}
+            onClick={() => setSelectedIndustry(industry)}
+            className={`px-3 sm:px-5 py-2 rounded-full text-xs sm:text-sm md:text-base border font-medium transition duration-300
+              ${
                 selectedIndustry === industry
-                  ? 'bg-primary text-white'
+                  ? 'bg-primary text-white border-transparent'
                   : 'bg-white text-gray-700 border-gray-300 hover:bg-blue-100'
-              } transition duration-300`}
-            >
-              {industry}
-            </button>
-          ))}
-        </div>
+              }
+            `}
+          >
+            {industry}
+          </button>
+        ))}
+      </div>
+
 
         {/* Project Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">

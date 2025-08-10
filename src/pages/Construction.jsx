@@ -8,7 +8,7 @@ import ConstructionGallery from '../components/ConstructionGallary.jsx';
 
 const ServicesPage = () => (
   <div className='bg-background min-h-screen'>
-    <title>Services | Dankil</title>
+    <title>Services | DANKAL</title>
     <meta name="description" content="Explore the industrial, construction, manufacturing, and import-export services offered by Dankil." />
     
     <WhatWeOffer />

@@ -47,7 +47,7 @@ const certifications = [
 
 const ShippingMap = () => {
   return (
-    <div className="max-w-7xl mx-auto p-6">
+    <div className="max-w-7xl mx-auto p-6 ">
       <h2 className="text-3xl font-bold text-primaryText mb-8 text-center">
         Global Shipping Routes & Certifications
       </h2>

@@ -16,7 +16,7 @@ const Globe = () => {
 
       {/* Slogan */}
       <div className="flex flex-col items-center text-center space-y-4 mt-10">
-        <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-primaryText tracking-wide whitespace-nowrap mt-20">
+        <h2 className="lg:text-4xl sm:text-3xl md:text-4xl font-bold text-primaryText tracking-wide whitespace-nowrap mt-20">
           DANKAL Global Trade Solutions
         </h2>
         <p className="text-lg sm:text-xl md:text-2xl text-secondary max-w-2xl">
