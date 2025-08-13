@@ -24,20 +24,20 @@ const ContactUs = () => {
   };
 
   return (
-    <section
-      className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-8 md:px-12 py-12 font-sans relative"
-      style={{
-        backgroundImage: `url(${office})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
-    >
+    <section className="relative min-h-screen flex flex-col items-center justify-center px-4 sm:px-8 md:px-12 py-12 font-sans">
+
+      {/* Background image */}
+      <img 
+        src={office} 
+        alt="Office" 
+        className="absolute inset-0 w-full h-full object-cover" 
+        loading="lazy"
+      />
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/30 backdrop-blur-sm z-0 " />
 
       {/* Container */}
-      <div className="relative max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 shadow-xl rounded-2xl bg-white/80 backdrop-blur-md p-6 md:p-10 z-10  lg:mt-20 md:mt-40 mt-20">
-
+      <div className="relative z-10 max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 shadow-xl rounded-2xl bg-white/80 backdrop-blur-md p-6 md:p-10 lg:mt-20 md:mt-40 mt-20">
         {/* Left Side - Info */}
         <div className="flex flex-col justify-center space-y-6 md:space-y-8 px-4 md:px-0">
           <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 leading-snug drop-shadow-md">
