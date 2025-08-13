@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import office from '../assets/office.jpg';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -28,7 +27,7 @@ const ContactUs = () => {
 
       {/* Background image */}
       <img 
-        src={office} 
+        src="/images/office.jpg"
         alt="Office" 
         className="absolute inset-0 w-full h-full object-cover" 
         loading="lazy"
