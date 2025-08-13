@@ -1,5 +1,5 @@
 import React from 'react';
-import park from '../assets/office.png';
+import park from '../assets/office.jpg';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaFacebookF, FaLinkedinIn, FaTelegramPlane, FaWhatsapp, FaInstagram } from 'react-icons/fa';
