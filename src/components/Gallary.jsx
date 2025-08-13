@@ -6,7 +6,7 @@ import image4 from "../assets/gallery/m.png";
 import image6 from "../assets/gallery/c4.png";
 import image7 from "../assets/gallery/container.png";
 import image8 from "../assets/gallery/integration.png";
-import image9 from "../assets/office.jpg";
+import image9 from "../assets/office.png";
 
 import { Link } from "react-router-dom";
 

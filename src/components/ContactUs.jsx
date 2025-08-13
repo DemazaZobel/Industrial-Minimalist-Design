@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import office from '../assets/office.jpg';
+import office from '../assets/office.png';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
