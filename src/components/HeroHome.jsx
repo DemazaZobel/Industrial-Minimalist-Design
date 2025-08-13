@@ -2,8 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 import logo from "../assets/logo.png"; // replace with your logo path
 import image1 from "../assets/gallery/m.png";
 import image2 from "../assets/gallery/c.png";
-import image3 from "../assets/gallery/t.png";
-
+import image3 from "../assets/gallery/ship.png";
+import { Link } from "react-router-dom";
 
 const images = [image1, image2, image3];
 
@@ -30,7 +30,7 @@ const LandingSection = () => {
     setTimeout(() => {
       setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
       setFade(true);
-    }, 400);
+    }, 300);
   };
 
   const nextImage = () => {
@@ -58,7 +58,7 @@ const LandingSection = () => {
   }, [currentIndex]);
 
   return (
-    <section className="flex flex-col lg:flex-row items-center justify-between max-w-7xl mx-auto px-8 py-20 gap-16">
+    <section className="flex flex-col lg:flex-row items-center justify-between max-w-6xl mx-auto px-8 py-20 gap-16">
       {/* Left Side */}
       <div className="flex flex-col flex-1 max-w-xl space-y-4">
         {/* Logo */}
@@ -75,20 +75,26 @@ const LandingSection = () => {
         </p>
 
         {/* Buttons */}
-        <div className="flex justify-center lg:justify-start gap-8">
-          <button
-            className="bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:ring-yellow-300 focus:outline-none text-white px-10 py-3 rounded-full font-semibold shadow-lg transition-transform transform hover:scale-105 active:scale-95"
-            aria-label="Explore more projects"
-          >
-            Explore More
-          </button>
-          <button
-            className="bg-transparent border-2 border-yellow-500 hover:bg-yellow-500 hover:text-white focus:ring-4 focus:ring-yellow-300 focus:outline-none text-yellow-600 px-10 py-3 rounded-full font-semibold shadow-md transition-colors transition-transform transform hover:scale-105 active:scale-95"
-            aria-label="See projects"
-          >
-            Contact Us
-          </button>
-        </div>
+       
+
+      <div className="flex justify-center lg:justify-start gap-8">
+        <Link
+          to="/projects"
+          className="bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:ring-yellow-300 focus:outline-none text-white px-10 py-3 rounded-full font-semibold shadow-lg transition-transform transform hover:scale-105 active:scale-95"
+          aria-label="Explore more projects"
+        >
+          Explore More
+        </Link>
+
+        <Link
+          to="/contact"
+          className="bg-transparent border-2 border-yellow-500 hover:bg-yellow-500 hover:text-white focus:ring-4 focus:ring-yellow-300 focus:outline-none text-yellow-600 px-10 py-3 rounded-full font-semibold shadow-md transition-colors transition-transform transform hover:scale-105 active:scale-95"
+          aria-label="Contact Us"
+        >
+          Contact Us
+        </Link>
+      </div>
+
       </div>
 
       {/* Right Side: Image Carousel */}
@@ -103,23 +109,8 @@ const LandingSection = () => {
           draggable="false"
         />
 
-        {/* Navigation arrows */}
-        <button
-          onClick={prevImage}
-          aria-label="Previous image"
-          className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-yellow-500 bg-opacity-90 hover:bg-opacity-100 rounded-full p-3 text-white shadow-lg transition-shadow focus:outline-none focus:ring-4 focus:ring-yellow-300"
-          type="button"
-        >
-          &#8592;
-        </button>
-        <button
-          onClick={nextImage}
-          aria-label="Next image"
-          className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-yellow-500 bg-opacity-90 hover:bg-opacity-100 rounded-full p-3 text-white shadow-lg transition-shadow focus:outline-none focus:ring-4 focus:ring-yellow-300"
-          type="button"
-        >
-          &#8594;
-        </button>
+       
+    
       </div>
     </section>
   );

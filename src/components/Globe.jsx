@@ -1,12 +1,12 @@
 import React from 'react';
 import globe from '../assets/global.png';
 
-import coffee from '../assets/ExportImport/dark-coffee-beans-bowl-brown-table.jpg';
-import sesame from '../assets/ExportImport/white-sesame-black-sesame-dark-background.jpg';
-import livestock from '../assets/ExportImport/black-white-spotty-cows-farm.jpg';
-import wheat from '../assets/ExportImport/field-with-spikelets-close-up-background-with-wheat-spikelets.jpg';
-import sugar from '../assets/ExportImport/background-sugar-cubes.jpg';
-import fuel from '../assets/ExportImport/petrol-pump-hand-biodiesel-sustainable-environment.jpg';
+import coffee from '../assets/ExportImport/roastedcoffee.png';
+import sesame from '../assets/ExportImport/sesame.png';
+import livestock from '../assets/ExportImport/livestocks.png';
+import wheat from '../assets/ExportImport/wheat.png';
+import sugar from '../assets/ExportImport/sugar.png';
+import fuel from '../assets/ExportImport/fuel.png';
 
 const tradeImages = [wheat, sugar, fuel, coffee, sesame, livestock];
 

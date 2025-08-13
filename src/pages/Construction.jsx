@@ -1,8 +1,6 @@
 import React from 'react';
-import Constraction from '../components/HeroConstruction.jsx';
 import WhatWeOffer from '../components/ConstructionOffer.jsx';
 import ConstructionStep from '../components/ConstructionSteps.jsx';
-import ConstructionTestimonials from '../components/ConstructionTestimonials.jsx';
 import ConstructionCTA from '../components/ConstructionCTA.jsx';
 import ConstructionGallery from '../components/ConstructionGallary.jsx';
 

@@ -1,38 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import machine from "../assets/gallery/m.jpeg";
-import industrial from "../assets/gallery/m.png";
-import textile from "../assets/gallery/textile.png";
-import construction from "../assets/gallery/c.png";
-import globalTrade from "../assets/gallery/t.png";
-import factory from "../assets/gallery/m2.png";
+import { Cpu, Home, Globe, Factory } from 'lucide-react'; // icons
 
 const services = [
   {
     title: 'Industrial Solutions',
     description: 'State-of-the-art industrial machinery and process automation for maximum efficiency and productivity.',
-    icon: industrial,
+    icon: <Cpu className="w-10 h-10 text-primary" />,
     path: '/projects',
     stats: 'Projects'
   },
   {
     title: 'Construction Management',
     description: 'Comprehensive project lifecycle management from planning to execution with precision engineering.',
-    icon: construction,
+    icon: <Home className="w-10 h-10 text-primary" />,
     path: '/construction',
-    stats: 'construction'
+    stats: 'Construction'
   },
   {
     title: 'Global Trade',
     description: 'Seamless import/export solutions with optimized logistics and customs clearance.',
-    icon: globalTrade,
+    icon: <Globe className="w-10 h-10 text-primary" />,
     path: '/cargo',
     stats: 'Import/Export'
   },
   {
     title: 'Manufacturing',
     description: 'ISO-certified production facilities delivering premium quality with sustainable practices.',
-    icon: machine,
+    icon: <Factory className="w-10 h-10 text-primary" />,
     path: '/manufacture',
     stats: 'Manufacturing'
   },
@@ -40,7 +35,7 @@ const services = [
 
 const Services = () => (
   <section className="py-20 bg-background">
-    <div className="max-w-7xl mx-auto px-6 lg:px-4">
+    <div className="max-w-6xl mx-auto px-2 lg:px-2">
       <div className="text-center mb-16">
         <span className="inline-block px-4 py-2 text-lg font-semibold text-primary rounded-full mb-6 tracking-wider uppercase">
           Our Services
@@ -65,7 +60,7 @@ const Services = () => (
 
             <div className="relative z-10 h-full flex flex-col">
               <div className="flex items-center justify-center w-14 h-14 mb-5 rounded-lg bg-accent/10 p-2">
-                <img src={icon} alt={`${title} icon`} className="w-10 h-10 object-contain" />
+                {icon}
               </div>
 
               <h3 className="text-lg font-semibold text-secondary mb-2">{title}</h3>

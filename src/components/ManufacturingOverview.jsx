@@ -10,7 +10,7 @@ const ManufacturingOverview = () => (
         </h2>
         <div className="w-24 h-1 bg-amber-500 mx-auto mb-8"></div>
         <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-          At Dankil Industries, we orchestrate the perfect symphony between global markets and precision manufacturing. 
+          At Dankal Industries, we orchestrate the perfect symphony between global markets and precision manufacturing. 
           Our hands caress every stage - from ethically sourcing raw materials to delivering finished products 
           with surgical precision. We don't just move goods; we craft supply chain experiences that excite your bottom line.
         </p>

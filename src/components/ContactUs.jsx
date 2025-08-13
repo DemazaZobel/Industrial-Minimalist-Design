@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import office from '../assets/office.jpg';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -27,7 +28,7 @@ const ContactUs = () => {
 
       {/* Background image */}
       <img 
-        src="/images/office.jpg"
+        src={office} 
         alt="Office" 
         className="absolute inset-0 w-full h-full object-cover" 
         loading="lazy"
@@ -49,7 +50,7 @@ const ContactUs = () => {
           <div className="space-y-4 text-gray-700 max-w-xs">
             <ContactInfo
               icon={<IconPhone />}
-              text="+251 911 123 456"
+              text="+251-987607080"
             />
             <ContactInfo
               icon={<IconMail />}
@@ -57,7 +58,7 @@ const ContactUs = () => {
             />
             <ContactInfo
               icon={<IconLocation />}
-              text="123 Dankil Street, Addis Ababa, Ethiopia"
+              text="123 Dankal Street, Addis Ababa, Ethiopia"
             />
           </div>
         </div>

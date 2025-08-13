@@ -1,16 +1,15 @@
 import React from "react";
-import residential from "../assets/construction/view-modern-construction-site RES.jpg";//
-import commercial from "../assets/construction/illustration-construction-site.jpg";//
-import infrastructure from "../assets/construction/looking-up-through-metal-structure.jpg";
-import renovation from "../assets/construction/view-modern-construction-site renovTION.jpg";//
-import sustainable from "../assets/construction/image.png";
+import commercial from "../assets/construction/commercial.png";//
+import infrastructure from "../assets/construction/new.png";
+import renovation from "../assets/construction/renovation.png";//
+import sustainable from "../assets/construction/green.png";
 
 const services = [
   {
     title: "Commercial Construction",
     description:
       "From family homes to high-rise offices, we bring architectural plans to life with craftsmanship, speed, and attention to detail.",
-    image: residential,
+    image: commercial,
     reverse: false,
   },
   {

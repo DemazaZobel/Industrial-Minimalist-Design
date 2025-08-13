@@ -1,10 +1,10 @@
 import React from "react";
-import img1 from "../assets/construction/a.jpg";
-import img2 from "../assets/construction/b.jpg";
-import img3 from "../assets/construction/c.jpg";
-import img4 from "../assets/construction/d.jpg";
-import img5 from "../assets/construction/e.jpg";
-import img6 from "../assets/construction/f.jpg";
+import img1 from "../assets/construction/c1.png";
+import img2 from "../assets/construction/c2.png";
+import img3 from "../assets/construction/c3.png";
+import img4 from "../assets/construction/c4.png";
+import img5 from "../assets/construction/c5.png";
+import img6 from "../assets/construction/c6.png";
 import { Link, useNavigate } from "react-router-dom";
 
 const images = [img1, img2, img3, img4, img5, img6];

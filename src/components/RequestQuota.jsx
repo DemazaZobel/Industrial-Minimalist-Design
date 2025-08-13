@@ -22,8 +22,8 @@ const RequestQuote = () => {
           Our team is ready to assist you with any questions or requests.
         </p>
         <a
-          href="mailto:contact@dankil.com"
-          className="inline-block px-8 py-4 bg-button text-white font-semibold rounded-full hover:bg-accent transition"
+          href="/contact"
+          className="inline-block px-8 py-4 bg-primary text-white font-semibold rounded-full hover:bg-secondary transition"
         >
           Contact Us Now
         </a>

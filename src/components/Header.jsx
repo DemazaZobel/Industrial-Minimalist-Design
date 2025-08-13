@@ -33,8 +33,8 @@ const Header = () => {
 
   return (
     <header
-      className={`sticky top-10 z-[9999]
-        lg:w-[83%] lg:left-[8.8%]
+      className={`sticky top-4 z-[9999]
+        lg:w-[86%] lg:left-[7%]
         md:w-[90%] md:left-[6%]
         sm:w-[90%]
         w-[90%] left-[5%]

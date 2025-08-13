@@ -1,8 +1,8 @@
 import React from 'react';
-
+import park from '../assets/office.jpg';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FaFacebookF, FaLinkedinIn, FaTelegramPlane, FaWhatsapp } from 'react-icons/fa';
+import { FaFacebookF, FaLinkedinIn, FaTelegramPlane, FaWhatsapp, FaInstagram } from 'react-icons/fa';
 
 const PhoneSVG = () => (
   <svg
@@ -60,7 +60,7 @@ const ContactUs = () => {
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center filter brightness-50"
-        style={{ backgroundImage: `url('/images/office.jpg')` }}
+        style={{ backgroundImage: `url(${park})` }}
         aria-hidden="true"
       ></div>
 
@@ -73,8 +73,8 @@ const ContactUs = () => {
 
         {/* Contact Info */}
         <div className="space-y-5 mb-12 text-base sm:text-lg font-medium max-w-xs mx-auto">
-          <p className="flex items-center justify-center"><PhoneSVG /> +251 912 345 678</p>
-          <p className="flex items-center justify-center"><EmailSVG /> info@dankilindustries.com</p>
+          <p className="flex items-center justify-center"><PhoneSVG /> +251 987 607080</p>
+          <p className="flex items-center justify-center"><EmailSVG /> info@dankalindustries.com</p>
           <p className="flex items-center justify-center"><LocationSVG /> Addis Ababa, Ethiopia</p>
         </div>
 

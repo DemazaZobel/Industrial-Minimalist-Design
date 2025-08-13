@@ -4,51 +4,61 @@ import machine from "../assets/gallery/m.jpeg";
 import machine1 from "../assets/gallery/m.png";
 import textile from "../assets/gallery/textile.png";
 import construction from "../assets/gallery/c.png";
-import importexport from "../assets/ExportImport/dark-coffee-beans-bowl-brown-table.jpg";
+import construction1 from "../assets/construction/new.png";
+import importexport from "../assets/ExportImport/logistics.png";
+import importexport1 from "../assets/ExportImport/supplychain.png";
 import factory from "../assets/gallery/m2.png";
+import { ImOpt } from 'react-icons/im';
 
 const projects = [
+  // Manufacturing Projects
   {
-    title: 'Industrial Plant Expansion',
-    description: 'Successfully expanded the capacity by 40% using advanced machinery.',
+    title: 'Industrial Equipment Installation',
+    description: 'We handle the full installation of machinery and production lines for new manufacturing setups.',
     imageUrl: factory,
     link: '/projects',
   },
   {
-    title: 'International Logistics Network',
-    description: 'Optimized import-export routes across multiple continents.',
+    title: 'Eco-Friendly Manufacturing Projects',
+    description: 'Executing sustainable manufacturing processes that reduce waste and energy consumption.',
+    imageUrl: machine,
+    link: '/projects',
+  },
+
+  // Import & Export Projects
+  {
+    title: 'International Logistics & Shipment',
+    description: 'Managing import-export operations to streamline delivery and reduce costs for clients.',
     imageUrl: importexport,
     link: '/projects',
   },
   {
-    title: 'Eco-Friendly Manufacturing',
-    description: 'Implemented sustainable manufacturing practices reducing waste.',
-    imageUrl: machine,
+    title: 'Supply Chain Setup & Optimization',
+    description: 'Implementing efficient supply chains for small to mid-sized industrial clients.',
+    imageUrl: importexport1,
     link: '/projects',
   },
+
+  // Construction Projects
   {
-    title: 'Urban Construction Project',
-    description: 'Delivered a high-rise commercial complex on time and under budget.',
+    title: 'Residential & Commercial Construction',
+    description: 'Executing small to mid-scale construction projects from foundation to finishing.',
     imageUrl: construction,
     link: '/projects',
   },
   {
-    title: 'Eco-Friendly Manufacturing',
-    description: 'Implemented sustainable manufacturing practices reducing waste.',
-    imageUrl: machine,
-    link: '/projects',
-  },
-  {
-    title: 'Urban Construction Project',
-    description: 'Delivered a high-rise commercial complex on time and under budget.',
-    imageUrl: construction,
+    title: 'Turnkey Industrial Construction',
+    description: 'Managing end-to-end construction projects for industrial facilities, including planning, procurement, and execution.',
+    imageUrl: construction1,
     link: '/projects',
   },
 ];
 
+
+
 const Projects = () => (
   <section className="py-20 bg-background">
-    <div className="max-w-7xl mx-auto px-6">
+    <div className="max-w-6xl mx-auto px-6">
       <h2 className="text-4xl font-extrabold text-center text-primaryText mb-14">Our Projects</h2>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">

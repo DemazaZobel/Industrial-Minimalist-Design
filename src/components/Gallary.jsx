@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from "react";
 import image1 from "../assets/gallery/m2.png";
 import image2 from "../assets/gallery/c.png";
-import image3 from "../assets/gallery/t.png";
+import image3 from "../assets/gallery/ship.png";
 import image4 from "../assets/gallery/m.png";
 import image5 from "../assets/gallery/c1.jpg";
-import image6 from "../assets/gallery/t1.png";
+import image6 from "../assets/gallery/c4.png";
+import image7 from "../assets/gallery/container.png";
+import image8 from "../assets/gallery/integration.png";
+
 import { Link } from "react-router-dom";
 
-const images = [image5, image4, image3, image2, image1, image6];
+const images = [image5, image4, image3, image2, image1, image6, image7, image8];
 
 const GalleryPage = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

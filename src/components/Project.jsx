@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import machine from "../assets/gallery/m.jpeg";
+import machine from "../assets/gallery/m4.png";
 import machine1 from "../assets/gallery/m.png";
 import textile from "../assets/gallery/textile.png";
 import construction from "../assets/gallery/c.png";
-import importexport from "../assets/ExportImport/dark-coffee-beans-bowl-brown-table.jpg";
+import importexport from "../assets/ExportImport/coffee.png";
 import factory from "../assets/gallery/m2.png";
 
 const projectsData = [
@@ -17,7 +17,7 @@ const projectsData = [
     year: 2025,
     status: 'Planned',
     description:
-      'We established a cutting-edge textile manufacturing line utilizing automated spinning and weaving technologies. The project involved procurement, installation, training, and supply chain coordination across five regional vendors. Our approach prioritized sustainability and operational efficiency, making the plant one of the most cost-effective textile units in East Africa.',
+      'Cutting-edge textile manufacturing line utilizing automated spinning and weaving technologies with sustainable and efficient operations.',
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const projectsData = [
     year: 2026,
     status: 'Planned',
     description:
-      'Dankil Industries manages the end-to-end export logistics for coffee and sesame sourced from over 1,000 Ethiopian farmers. We ensure international compliance, cold chain optimization, and efficient port handling. Our strategic partnerships have boosted exports by 30% year-on-year.',
+      'End-to-end export logistics for coffee and sesame sourced from over 1,000 Ethiopian farmers with optimized shipping and international compliance.',
   },
   {
     id: 3,
@@ -39,30 +39,31 @@ const projectsData = [
     year: 2027,
     status: 'Planned',
     description:
-      'This 14-story commercial tower is designed with modern glass curtain walls and reinforced concrete technology. Dankil is overseeing the architectural design, project financing, and execution. The building includes green terraces, rooftop solar, and 3-level basement parking.',
+      'A modern 14-story commercial tower featuring green terraces, solar integration, and comprehensive design and construction management.',
   },
   {
     id: 4,
     title: 'Machinery Import Deal',
     industry: 'Import',
-    image: machine,
-    location: 'Ethiopia',
-    year: 2025,
-    status: 'Planned',
-    description:
-      'We successfully negotiated, procured, and imported 30 units of industrial-grade manufacturing equipment from German OEMs. Customs clearance, transportation, and installation were all handled by our logistics team with zero delays or damage claims.',
-  },
-  {
-    id: 5,
-    title: 'Modular Housing Development',
-    industry: 'Construction',
     image: factory,
     location: 'Ethiopia',
     year: 2025,
     status: 'Planned',
     description:
-      'In partnership with regional housing authorities, we delivered 500 modular homes within 6 months. Dankil oversaw site preparation, modular fabrication, and service integration (plumbing, electrical). The homes provide affordable, safe housing for low-income communities.',
+      'Procurement and import of industrial-grade machines with precise logistics, customs handling, and installation.',
   },
+ {
+  id: 5,
+  title: 'Industrial Facility Construction',
+  industry: 'Construction',
+  image: machine,
+  location: 'Ethiopia',
+  year: 2025,
+  status: 'Planned',
+  description:
+    'Construction of a modern industrial facility with integrated manufacturing lines, storage solutions, and operational support for local industries.',
+},
+
   {
     id: 6,
     title: 'Renewable Energy Initiative',
@@ -72,9 +73,10 @@ const projectsData = [
     year: 2026,
     status: 'Planned',
     description:
-      'Dankil Industries is investing in renewable energy solutions to power industrial operations sustainably. This initiative includes solar panel installation and energy storage systems to reduce carbon footprint and operational costs.',
+      'Implementation of solar panels and energy storage systems to power industrial operations sustainably and efficiently.',
   },
 ];
+
 
 
 const industries = ['All', 'Manufacturing', 'Import', 'Export', 'Construction'];

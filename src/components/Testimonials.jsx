@@ -3,27 +3,28 @@ import { Quote } from 'lucide-react';
 
 const testimonials = [
   {
-    name: 'Dr. Mesfin Tesfaye',
-    company: 'Global Manufacturing Inc.',
-    position: 'CEO',
-    quote: 'Dankal provided us with unparalleled service and innovative solutions that transformed our production efficiency by 40%.',
+    name: 'Martha Alemu',
+    company: 'Dankal Industries',
+    position: 'Employee',
+    quote: 'We are just getting started, but our team is committed to providing quality service and building strong relationships with our first clients.',
     rating: 5
+  },
+  {
+    name: 'Daniel Bekele',
+    company: 'Dankal Industries',
+    position: 'Employee',
+    quote: 'As a new company, every project is a learning experience. We are focused on growing responsibly and delivering what we promise.',
+    rating: 4
   },
   {
     name: 'Selam Tesfaye',
-    company: 'Hule Construction',
-    position: 'Operations Director',
-    quote: 'Their expertise and professionalism are second to none. Completed our $15M project 3 weeks ahead of schedule with zero safety incidents.',
-    rating: 5
-  },
-  {
-    name: 'Ahmed Hassan',
-    company: 'Hassan Trading Co.',
-    position: 'Supply Chain Manager',
-    quote: 'Dankal’s import-export service reduced our logistics costs by 28% while improving delivery reliability to 99.7%.',
+    company: 'Dankal Industries',
+    position: 'Operations Manager',
+    quote: 'Our goal is to establish trust with our first partners and ensure transparent communication throughout every project.',
     rating: 4
   },
 ];
+
 
 const Testimonials = () => {
   const refs = useRef([]);
@@ -74,7 +75,7 @@ const Testimonials = () => {
 
   return (
     <section className="bg-background py-24">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-20">
           <span className="inline-block px-4 py-2 text-sm font-medium text-accent bg-accent/10 rounded-full mb-4 tracking-wider uppercase">
             Client Testimonials
